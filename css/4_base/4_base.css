@@ -1,0 +1,57 @@
+section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "header  header"
+                         "article picture"
+                         "footer  picture";
+    width: 80%;
+    min-width: 700px;
+    max-width: 1280px;
+    margin: 25px auto;
+}
+
+header {
+    grid-area: header;
+    height: 40px;
+    display: flex;
+}
+
+nav {
+    flex-grow: 1;
+}
+
+button {
+    height: 40px;
+    border-radius: 23px;
+    border: none;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 5px;
+    box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.16);
+    -webkit-box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.16);
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+}
+
+button>img {
+    height: 20px;
+    vertical-align: middle;
+}
+
+button:hover {
+    background-color: var(--text-color-menu-hover) !important;
+}
+
+picture {
+    grid-area: picture;
+    justify-self: end;
+}
+
+article {
+    grid-area: article;
+}
+
+footer {
+    grid-area: footer;
+}
