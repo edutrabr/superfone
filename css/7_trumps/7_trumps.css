@@ -14,3 +14,26 @@
     background-color: #488cf5 !important;
     color: #fff !important;
 }
+
+.menu-toggle {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    right: 15px;
+    display: block;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+.menu-toggle > img {
+    height: 40px;
+    width: 40px;
+}
+
+.menu-toggle>img:hover {
+    transform: scale(1.2);
+}
+
+.item-menu-responsive {
+    visibility: hidden;
+}

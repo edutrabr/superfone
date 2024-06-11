@@ -1,0 +1,77 @@
+@media only screen and (max-width: 550px) {
+    body {
+        overflow-x: hidden !important;
+    }
+
+    .brand > img {
+        margin-left: 15px;
+    }
+
+    .btn-bag, .btn-login {
+        display: none;
+    }
+
+    .picture {
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
+        opacity: .5;
+    }
+
+    h2 {
+        color: #000 !important;
+    }
+
+    .navigation {
+        position: absolute;
+        top: 80px;
+        width: 100%;
+        height: calc(100vh - 80px);
+        background-color: #6066f2;
+        z-index: 10;
+        left: -100%;
+        transition: all 0.3 ease;
+        -webkit-transition: all 0.3 ease;
+    }
+
+    .navigation.active {
+        left: 0;
+        transition: all 0.3 ease;
+        -webkit-transition: all 0.3 ease;
+    }
+
+    .navigation > ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navigation > ul > li {
+        padding: 30px 0;
+    }
+
+    .navigation > ul > li > a {
+        color: #fff !important;
+        border: none !important;
+        font-size: 25px !important;
+    }
+
+    .navigation > ul > li > a:hover {
+        color: #f4891f !important;
+    }
+    
+    .menu-toggle {
+        visibility: visible !important;
+    }
+    
+    .item-menu-responsive {
+        visibility: visible !important;
+    }
+
+    .footer {
+        position: absolute;
+        left: 15px;
+        bottom: 20px;
+    }
+}

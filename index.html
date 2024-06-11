@@ -25,6 +25,8 @@
                     <li><a href="#">Galeria</a></li>
                     <li><a href="#">Informações</a></li>
                     <li><a href="#">Suporte</a></li>
+                    <li><a href="#" class="item-menu-responsive">Sacola</a></li>
+                    <li><a href="#" class="item-menu-responsive">Login</a></li>
                 </ul>
             </nav>
 
@@ -36,6 +38,10 @@
                 Login
                 <img src="img/user.png">
             </button>
+
+            <div class="menu-toggle" id="btn-menu-toggle">
+                <img src="img/menu.png" alt="Menu">
+            </div>
         </header>
             
         <article class="article">
@@ -58,5 +64,12 @@
             <small> &copy; Powered by EDutra</small>
         </footer>
     </section>
+    
+    <script>
+        function toggleMenu() {
+            document.querySelector('nav').classList.toggle('active')
+        }
+        document.querySelector('#btn-menu-toggle').addEventListener('click', toggleMenu);
+    </script>
 </body>
 </html>
